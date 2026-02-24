@@ -1,0 +1,39 @@
+
+/* Base: <601px → 1 per row */
+.custom-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* 601–900px → 2 per row */
+@media (min-width: 601px) and (max-width: 900px) {
+    .custom-col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* >900px → 3 per row */
+@media (min-width: 901px) {
+    .custom-col {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+}
+
+/* Optional: make images responsive */
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Optional: highlight styling */
+mark {
+    background-color: #e0e0e0;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+h3{
+    font-family: 'Labrador', sans-serif; 
+    color: #343a40;
+}
