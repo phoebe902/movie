@@ -35,7 +35,7 @@
     width: 48%; height: 300px;
 }
 
-/* Optional: highlight styling */
+
 mark {
     background-color: #e0e0e0;
     padding: 2px 4px;
@@ -46,53 +46,52 @@ h3{
     color: #343a40;
 }
 
-/* Container spacing */
+
 .container {
-    margin-top: 3rem; /* same as my-5 */
+    margin-top: 3rem; 
     margin-bottom: 3rem;
 }
 
-/* Title styling */
+
 .movie-title {
-    text-align: center;      /* text-center */
-    margin-bottom: 1.5rem;  /* mb-4 */
+    text-align: center;      
+    margin-bottom: 1.5rem; 
     font-family: 'Times New Roman', sans-serif;
     font-weight: 700;
 }
 
 
 
-/* Card styling */
+
 .movie-card {
-    border: 0;         /* border-0 */
-    width: 100%;       /* w-100 */
-    padding: 1rem;     /* p-3 */
+    border: 0;         
+    width: 100%;      
+    padding: 1rem;    
 }
 
-/* Movie image */
 .movie-img {
     width: 48%;
     height: 300px;
     object-fit: cover;
 }
 
-/* Links styling */
+
 .movie-link {
-    font-size: 0.875rem; /* small */
-    color: #0d6efd;      /* text-primary */
-    display: block;      /* d-block */
+    font-size: 0.875rem; 
+    color: #0d6efd;      
+    display: block;     
     text-decoration: underline;
     margin-bottom: 0.25rem;
-    white-space: normal;      /* allow line breaks */
-    word-wrap: break-word;    /* break long words or URLs */
-    overflow-wrap: break-word;/* modern support */
+    white-space: normal;      
+    word-wrap: break-word;    
+    overflow-wrap: break-word;
 }
 
 .movie-link:hover {
     text-decoration: underline;
 }
 
-/* YouTube trailer styling */
+
 .youtube-trailer mark {
     background-color: #e0e0e0;
     padding: 2px 4px;
@@ -105,26 +104,26 @@ h3{
 
 .youtube-trailer i.bi-youtube {
     font-size: 14px;
-    color: #dc3545; /* text-danger */
+    color: #dc3545;
     margin-right: 4px;
 }
-/* Container spacing and width */
+
 .container {
     width: 100%;
-    max-width: 1140px; /* similar to Bootstrap container */
+    max-width: 1140px; 
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;  /* similar to container padding */
+    padding-left: 15px;  
     padding-right: 15px;
-    margin-top: 3rem;    /* my-5 => 3rem top and bottom */
+    margin-top: 3rem;  
     margin-bottom: 3rem;
 }
 .youtube-trailer mark {
-    display: inline-block;    /* so width can be controlled */
-    max-width: 100%;          /* don’t exceed parent card width */
-    white-space: normal;      /* allow line breaks */
-    word-wrap: break-word;    /* break long words or URLs */
-    overflow-wrap: break-word;/* modern support */
+    display: inline-block;   
+    max-width: 100%;          
+    white-space: normal;     
+    word-wrap: break-word;   
+    overflow-wrap: break-word;
     background-color: #e0e0e0;
     padding: 2px 4px;
     border-radius: 4px;
