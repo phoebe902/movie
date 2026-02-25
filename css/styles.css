@@ -128,3 +128,9 @@ h3{
     padding: 2px 4px;
     border-radius: 4px;
 }
+
+.youtube-icon {
+  width: 15px;
+  height: 15px;
+  color: red; /* change color here */
+}
