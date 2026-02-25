@@ -1,11 +1,20 @@
+.row {
+    display: flex;       
+    flex-wrap: wrap;     
+    margin-left: -0.75rem; 
+    margin-right: -0.75rem; 
+    box-sizing: border-box;
+}
 
-/* Base: <601px → 1 per row */
 .custom-col {
-    flex: 0 0 100%;
+    padding-left: 0.75rem;   
+    padding-right: 0.75rem; 
+    box-sizing: border-box;   
+    flex: 0 0 100%;           
     max-width: 100%;
 }
 
-/* 601–900px → 2 per row */
+
 @media (min-width: 601px) and (max-width: 900px) {
     .custom-col {
         flex: 0 0 50%;
@@ -13,7 +22,6 @@
     }
 }
 
-/* >900px → 3 per row */
 @media (min-width: 901px) {
     .custom-col {
         flex: 0 0 33.3333%;
@@ -21,10 +29,10 @@
     }
 }
 
-/* Optional: make images responsive */
+
 .card img {
-    width: 100%;
-    height: auto;
+   
+    width: 48%; height: 300px;
 }
 
 /* Optional: highlight styling */
@@ -36,4 +44,88 @@ mark {
 h3{
     font-family: 'Labrador', sans-serif; 
     color: #343a40;
+}
+
+/* Container spacing */
+.container {
+    margin-top: 3rem; /* same as my-5 */
+    margin-bottom: 3rem;
+}
+
+/* Title styling */
+.movie-title {
+    text-align: center;      /* text-center */
+    margin-bottom: 1.5rem;  /* mb-4 */
+    font-family: 'Times New Roman', sans-serif;
+    font-weight: 700;
+}
+
+
+
+/* Card styling */
+.movie-card {
+    border: 0;         /* border-0 */
+    width: 100%;       /* w-100 */
+    padding: 1rem;     /* p-3 */
+}
+
+/* Movie image */
+.movie-img {
+    width: 48%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Links styling */
+.movie-link {
+    font-size: 0.875rem; /* small */
+    color: #0d6efd;      /* text-primary */
+    display: block;      /* d-block */
+    text-decoration: underline;
+    margin-bottom: 0.25rem;
+    white-space: normal;      /* allow line breaks */
+    word-wrap: break-word;    /* break long words or URLs */
+    overflow-wrap: break-word;/* modern support */
+}
+
+.movie-link:hover {
+    text-decoration: underline;
+}
+
+/* YouTube trailer styling */
+.youtube-trailer mark {
+    background-color: #e0e0e0;
+    padding: 2px 4px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.youtube-trailer i.bi-youtube {
+    font-size: 14px;
+    color: #dc3545; /* text-danger */
+    margin-right: 4px;
+}
+/* Container spacing and width */
+.container {
+    width: 100%;
+    max-width: 1140px; /* similar to Bootstrap container */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;  /* similar to container padding */
+    padding-right: 15px;
+    margin-top: 3rem;    /* my-5 => 3rem top and bottom */
+    margin-bottom: 3rem;
+}
+.youtube-trailer mark {
+    display: inline-block;    /* so width can be controlled */
+    max-width: 100%;          /* don’t exceed parent card width */
+    white-space: normal;      /* allow line breaks */
+    word-wrap: break-word;    /* break long words or URLs */
+    overflow-wrap: break-word;/* modern support */
+    background-color: #e0e0e0;
+    padding: 2px 4px;
+    border-radius: 4px;
 }
